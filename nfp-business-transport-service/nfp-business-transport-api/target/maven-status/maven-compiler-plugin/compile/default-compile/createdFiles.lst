@@ -1,0 +1,12 @@
+com\nfp\business\transport\api\vo\req\car\CarVo.class
+com\nfp\business\transport\api\constants\TransportAuthConstant$CarConstant.class
+com\nfp\business\transport\api\emums\TransportEnum$SelfEnum$AuthEnum.class
+com\nfp\business\transport\api\emums\TransportEnum$SelfEnum$TypeEnum.class
+com\nfp\business\transport\api\emums\TransportEnum$AuditEnum.class
+com\nfp\business\transport\api\emums\TransportEnum.class
+com\nfp\business\transport\api\constants\TransportAuthConstant.class
+com\nfp\business\transport\api\vo\req\car\CarQueryReq.class
+com\nfp\business\transport\api\constants\TransportAuthConstant$ShipConstant.class
+com\nfp\business\transport\api\emums\TransportEnum$SelfEnum.class
+com\nfp\business\transport\api\emums\TransportEnum$AuditEnum$AuditStatusEnum.class
+com\nfp\business\transport\api\service\car\TransportService.class

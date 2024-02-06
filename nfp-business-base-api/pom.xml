@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>nfp-business</artifactId>
+        <groupId>nfp-business</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>nfp-business-base-api</artifactId>
+    <groupId>nfp-business</groupId>
+    <version>${business.current.version}</version>
+    <packaging>jar</packaging>
+
+    <!-- 设置api deploy的地址 远程maven仓库-->
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>rdc-releases</id>-->
+            <!--<url>https://repo.rdc.aliyun.com/repository/66010-release-NGuO5f/</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>rdc-snapshots</id>-->
+            <!--<url>https://repo.rdc.aliyun.com/repository/66010-snapshot-tdhhJ5/</url>-->
+        <!--</snapshotRepository>-->
+    <!--</distributionManagement>-->
+
+    <build>
+        <plugins>
+            <!-- 要将源码放上去，需要加入这个插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <configuration>
+                    <attach>true</attach>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

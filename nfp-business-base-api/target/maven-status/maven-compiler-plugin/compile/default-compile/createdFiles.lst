@@ -1,0 +1,10 @@
+com\nfp\business\base\api\baseVo\resp\BaseResp.class
+com\nfp\business\base\api\enums\BaseEnumInterface.class
+com\nfp\business\base\api\baseVo\BaseVo.class
+com\nfp\business\base\api\exception\ValidateParamsException.class
+com\nfp\business\base\api\baseVo\req\BaseReq.class
+com\nfp\business\base\api\baseVo\resp\BasePageResp.class
+com\nfp\business\base\api\exception\ThirdInvokeException.class
+com\nfp\business\base\api\exception\BusinessException.class
+com\nfp\business\base\api\constants\RespStausCodeConstant.class
+com\nfp\business\base\api\baseVo\req\BasePageReq.class

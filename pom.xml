@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>nfp-business</artifactId>
+    <groupId>nfp-business</groupId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+
+        <business.current.version>1.0.1-SNAPSHOT</business.current.version>
+        <!-- springboot -->
+        <spring-boot.version>2.6.3</spring-boot.version>
+        <spring.version>5.3.22</spring.version>
+        <spring-boot.web.version>2.6.3</spring-boot.web.version>
+        <aspectjweaver.version>1.9.7</aspectjweaver.version>
+        <!-- datasource -->
+        <mysql-connector-java.version>8.0.30</mysql-connector-java.version>
+        <druid-spring-boot-starter.version>1.2.8</druid-spring-boot-starter.version>
+        <mybatis-spring-boot-starter.version>2.2.2</mybatis-spring-boot-starter.version>
+        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <pagehelper-starter.version>1.4.6</pagehelper-starter.version>
+        <!-- dubbo -->
+        <dubbo-starter.version>0.2.1.RELEASE</dubbo-starter.version>
+        <dubbo.version>2.6.7</dubbo.version>
+        <!-- log -->
+        <logback.version>1.2.10</logback.version>
+        <lombok.version>1.18.24</lombok.version>
+        <slf4j.version>1.7.36</slf4j.version>
+        <!-- json -->
+        <jackson.version>2.13.1</jackson.version>
+        <fastjson2.version>2.0.20</fastjson2.version>
+        <commons-lang3.version>3.9</commons-lang3.version>
+    </properties>
+
+    <modules>
+        <module>nfp-business-base-api</module>
+        <module>nfp-business-transport-service</module>
+        <module>nfp-business-common-util</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jackson-core</artifactId>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <!-- 设置api deploy的地址 远程maven仓库-->
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>rdc-releases</id>-->
+            <!--<url>https://repo.rdc.aliyun.com/repository/66010-release-NGuO5f/</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>rdc-snapshots</id>-->
+            <!--<url>https://repo.rdc.aliyun.com/repository/66010-snapshot-tdhhJ5/</url>-->
+        <!--</snapshotRepository>-->
+    <!--</distributionManagement>-->
+
+</project>
